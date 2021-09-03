@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    overflow: hidden;
+  }
+  h1{
+      text-align: center;
+      font-size: 60px;
+      font-weight: 900;
+  }
+.runway{
+    width: 100%;
+    height: 200px;
+    background-image: url(images/road.jpg);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.boing-bd-046587{
+    width: 500px;
+    position: absolute;
+    right: -300px;
+    bottom: 100px;
+    animation: plane 4s linear infinite;
+    transform-origin: 100% 50%;
+}
+.boing-bd-644479{
+    width: 500px;
+    position: absolute;
+    right: -600px;
+    bottom: 100px;
+    animation: plane 4s linear 2s infinite;
+    transform-origin: 100% 50%;
+}
+@keyframes plane {
+    0%{
+        transform: translateX(0px) translateY(0px) rotate(0deg);
+    }
+
+    30%{
+        transform: translateX(-700px) translateY(0px) rotate(0deg);
+    }
+    100%{
+        transform: translateX(-2500px) translateY(-600px) rotate(25deg);
+    }
+}
